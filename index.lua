@@ -30,7 +30,7 @@ local OrionLib = {
 local Icons = {}
 
 local Success, Response = pcall(function()
-	Icons = HttpService:JSONDecode(game:HttpGetAsync("")).iconsb -- just wait when i upload this  shit fuckkkkkkk
+	Icons = HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/IIHUII/ttt/refs/heads/main/Icons.json")).iconsb -- just wait when i upload this  shit fuckkkkkkk
 end)
 
 if not Success then
@@ -3128,5 +3128,6 @@ end
 function OrionLib:Destroy()
     Orion:Destroy()
 end
+
 
 return OrionLib
